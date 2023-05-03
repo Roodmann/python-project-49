@@ -3,9 +3,11 @@ import prompt
 
 NUMBER_OF_ROUNDS = 3
 
+
 def welcome():
     """Приветствие"""
     print("Welcome to the Brain Games!")
+
 
 def welcome_user():
     """Приветствие игрока"""
@@ -13,12 +15,15 @@ def welcome_user():
     print(f'Hello, {name}!')
     return name
 
+
 def quest_answer():
     print('Answer "yes" if the number is even, otherwise answer "no".')
+
 
 def is_even(number):
     """Выявляем True и Fals"""
     return number % 2 == 0
+
 
 def ask_question_and_return_answer():
     """Задаем вопрос, получаем ответ"""
@@ -31,10 +36,12 @@ def ask_question_and_return_answer():
         correct_answer = 'no'
     return correct_answer
 
+
 def user_answer():
     """Ответ Пользователя"""
     answer = input('Your answer: ')
     return answer
+
 
 def cheсk_answer(user_answer, correct_answer, name):
     """Проверка ответа Пользователя"""
@@ -42,9 +49,11 @@ def cheсk_answer(user_answer, correct_answer, name):
         print('Correct!')
         return True
     else:
-        print(f'{user_answer} is wrong answer ;(. Correct answer was {correct_answer}. \n'
+        print(f'{user_answer} is wrong answer ;(.'
+              f'Correct answer was {correct_answer}. \n'
               f"Let's try again, {name}!")
         return False
+
 
 def game_process(name):
     """Рабочий процесс игры"""
@@ -56,8 +65,7 @@ def game_process(name):
             return
         print(f'Congratulations, {name}!')
 
-
-#welcome()
-#name = welcome_user()
-#quest_answer()
-#game_process(name)
+# welcome()
+# name = welcome_user()
+# quest_answer()
+# game_process(name)

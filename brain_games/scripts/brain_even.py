@@ -1,4 +1,6 @@
-from brain_games.game.even_game import welcome, welcome_user, quest_answer, game_process
+from brain_games.game.even_game import (welcome, welcome_user,
+                                        quest_answer, game_process
+                                        )
 
 
 def main():
@@ -6,7 +8,6 @@ def main():
     name = welcome_user()
     quest_answer()
     game_process(name)
-
 
 
 if __name__ == '__main__':
