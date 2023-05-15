@@ -2,7 +2,6 @@ import random
 import prompt
 
 NUMBER_OF_ROUNDS = 3
-OPERATOR = ['+', '-', '*']
 
 
 def welcome():
@@ -18,28 +17,31 @@ def welcome_user():
 
 
 def quest_answer():
-    print('What is the result of the expression?')
+    print('What number is missing in the progression?')
 
 
 def ask_question_and_return_answer():
     """Задаем вопрос, получаем ответ"""
-    first_num = random.randint(0, 100)
-    second_num = random.randint(0, 100)
-    symb_operator = random.choice(OPERATOR)
-    correct_answer = count_answer(first_num, symb_operator, second_num)
-    question = f'{first_num} {symb_operator} {second_num}'
+    question, correct_answer = get_progression()
     print(f'Question: {question}')
     return correct_answer
 
 
-def count_answer(first_num, OPERATOR, second_num):
-    """Проверка количество ответов"""
-    if OPERATOR == '+':
-        return first_num + second_num
-    elif OPERATOR == '-':
-        return first_num - second_num
-    elif OPERATOR == '*':
-        return first_num * second_num
+def get_progression():
+    """Получаем прогрессию"""
+    num = []
+    first_num = random.randint(1, 10)
+    num.append(str(first_num))
+    step = random.randint(1, 10)
+    for _ in range(9):
+        temp = first_num + step
+        num.append(str(temp))
+        first_num = temp
+    temp_num = random.randint(1, 10)
+    answer = str(num[temp_num])
+    num[temp_num] = '..'
+    question = " ".join(num).strip()
+    return question, answer
 
 
 def user_answer():
@@ -69,6 +71,7 @@ def game_process(name):
         if not result:
             return
     print(f'Congratulations, {name}!')
+
 
 # welcome()
 # name = welcome_user()

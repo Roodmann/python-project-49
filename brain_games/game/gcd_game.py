@@ -68,7 +68,7 @@ def game_process(name):
         result = cheсk_answer(user_answer, correct_answer, name)
         if not result:
             return
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
 
 
 # welcome()
