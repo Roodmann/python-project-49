@@ -7,3 +7,5 @@
 ####  Калькулятор [демонстрация](https://asciinema.org/a/jrgFZG7Ip3yayX56TxvrT4H06)
 
 ####  НОД  [демонстрация](https://asciinema.org/a/VWoQorwaklvz87a4SSQKLRBOL)
+
+####  Прогрессия [демонстрация](https://asciinema.org/a/RWURRkx66q9XIFO4XQx0Ouwdm)
