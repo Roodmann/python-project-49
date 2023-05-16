@@ -9,3 +9,5 @@
 ####  НОД  [демонстрация](https://asciinema.org/a/VWoQorwaklvz87a4SSQKLRBOL)
 
 ####  Прогрессия [демонстрация](https://asciinema.org/a/RWURRkx66q9XIFO4XQx0Ouwdm)
+
+####  Простое ли число [демонстрация](https://asciinema.org/a/v6VHshDyaxoOpJOp70kwN0MG0)
