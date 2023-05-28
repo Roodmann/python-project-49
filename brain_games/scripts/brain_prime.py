@@ -1,13 +1,10 @@
-from brain_games.game.prime_game import (welcome, welcome_user,
-                                         quest_answer, game_process
-                                         )
+from brain_games.game_engine import run_game
+from brain_games.game.prime_game import quest_answer
+from brain_games.game.prime_game import ask_question_and_return_answer
 
 
 def main():
-    welcome()
-    name = welcome_user()
-    quest_answer()
-    game_process(name)
+    run_game(quest_answer, ask_question_and_return_answer)
 
 
 if __name__ == '__main__':

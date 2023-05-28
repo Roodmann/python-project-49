@@ -1,4 +1,4 @@
 .venv
 .bashrc.swp
-/dist/
+dist
 __pycache__
