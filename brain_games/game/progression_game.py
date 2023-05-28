@@ -17,7 +17,7 @@ def get_progression():
     first_num = random.randint(1, 10)
     num.append(str(first_num))
     step = random.randint(1, 10)
-    for _ in range(9):
+    for _ in range(10):
         temp = first_num + step
         num.append(str(temp))
         first_num = temp
