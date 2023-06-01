@@ -12,6 +12,8 @@
 
 pip install --user git+[https://github.com/Roodmann/python-project-49]
 
+##  Демо - версия игр:
+
 ####  Четное или нечетное [демонстрация](https://asciinema.org/a/h0Jcsz6FZgQfCFTQMl02xqhn1) 
 	
 ####  Калькулятор [демонстрация](https://asciinema.org/a/jrgFZG7Ip3yayX56TxvrT4H06)
