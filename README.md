@@ -10,9 +10,9 @@
 
 ##  Установка:
 
-'''
+```
 pip install --user git+https://github.com/Roodmann/python-project-49
-'''
+```
 
 ##  Демо - версия игр:
 
