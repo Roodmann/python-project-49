@@ -10,7 +10,7 @@
 
 ##  Установка:
 
-####  pip install --user git+https://github.com/Roodmann/python-project-49
+>  pip install --user git+https://github.com/Roodmann/python-project-49
 
 ####  Четное или нечетное [демонстрация](https://asciinema.org/a/h0Jcsz6FZgQfCFTQMl02xqhn1) 
 	
