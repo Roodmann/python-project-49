@@ -1,17 +1,16 @@
 import random
 
 
+DESCRIPTION = 'What is the result of the expression?'
 OPERATORS = ('+', '-', '*')
-
-
-def quest_answer():
-    print('What is the result of the expression?')
+BEGIN_RANGE = 0
+END_RANGE = 100
 
 
 def ask_question_and_return_answer():
     """Задаем вопрос, получаем ответ"""
-    first_num = random.randint(0, 100)
-    second_num = random.randint(0, 100)
+    first_num = random.randint(BEGIN_RANGE, END_RANGE)
+    second_num = random.randint(BEGIN_RANGE, END_RANGE)
     symb_operator = random.choice(OPERATORS)
     correct_answer = count_answer(first_num, symb_operator, second_num)
     question = f'{first_num} {symb_operator} {second_num}'

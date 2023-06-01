@@ -40,10 +40,10 @@ def cheсk_answer(user_answer, correct_answer, name):
         return False
 
 
-def run_game(func_1, func_2):
+def run_game(DESCRIPTION, func_2):
     name = welcome()
     # Печатаем задание
-    func_1()
+    print(DESCRIPTION)
     for _ in range(NUMBER_OF_ROUNDS):
         # Получаем вопрос и ответ
         question, answer = func_2()
