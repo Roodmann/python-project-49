@@ -6,8 +6,8 @@ BEGIN_RANGE = 1
 END_RANGE = 100
 
 
-def ask_question_and_return_answer():
-    """Задаем вопрос, получаем ответ"""
+def get_question_and_answer():
+    """Получаем вопрос и ответ"""
     first_num = random.randint(BEGIN_RANGE, END_RANGE)
     second_num = random.randint(BEGIN_RANGE, END_RANGE)
     correct_answer = get_gcd(first_num, second_num)

@@ -30,14 +30,13 @@ def user_answer():
 
 def cheсk_answer(user_answer, correct_answer, name):
     """Проверка ответа Пользователя"""
-    if str(user_answer) == str(correct_answer):
+    if str(user_answer).lower() == str(correct_answer):
         print('Correct!')
         return True
-    else:
-        print(f'{user_answer} is wrong answer ;(.'
-              f'Correct answer was {correct_answer}. \n'
-              f"Let's try again, {name}!")
-        return False
+    print(f'{user_answer} is wrong answer ;(.'
+          f'Correct answer was {correct_answer}. \n'
+          f"Let's try again, {name}!")
+    return False
 
 
 def run_game(DESCRIPTION, func_2):

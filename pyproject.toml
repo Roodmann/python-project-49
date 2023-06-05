@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.5.0"
-description = ""
-authors = ["Dima"]
+description = "Mind game"
+authors = ["Dmitry_Babokin <roodmannofficial@gmail.com>"]
+repository = "https://github.com/Roodmann/python-project-49"
 readme = "README.md"
 packages = [{include = "brain_games"}]
 

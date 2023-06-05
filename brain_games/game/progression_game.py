@@ -7,8 +7,8 @@ BEGIN_RANGE = 1
 END_RANGE = 10
 
 
-def ask_question_and_return_answer():
-    """Задаем вопрос, получаем ответ"""
+def get_question_and_answer():
+    """Получаем вопрос и ответ"""
     question, correct_answer = get_progression()
     return question, correct_answer
 

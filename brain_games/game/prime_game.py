@@ -8,14 +8,14 @@ END_RANGE = 100
 
 def is_prime(number):
     """Выявляем True и Fals"""
-    for i in range(BEGIN_RANGE, (number // 2) + 1):
+    for i in range(2, (number // 1) + 1):
         if number % i == 0:
             return False
     return True
 
 
-def ask_question_and_return_answer():
-    """Задаем вопрос, получаем ответ"""
+def get_question_and_answer():
+    """Получаем вопрос и ответ"""
     question = (randint(BEGIN_RANGE, END_RANGE))
     temp_answer = is_prime(question)
     if temp_answer:

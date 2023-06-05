@@ -11,8 +11,8 @@ def is_even(number):
     return number % 2 == 0
 
 
-def ask_question_and_return_answer():
-    """Задаем вопрос, получаем ответ"""
+def get_question_and_answer():
+    """Получаем вопрос и ответ"""
     question = (randint(BEGIN_RANGE, END_RANGE))
     temp_answer = is_even(question)
     if temp_answer:
