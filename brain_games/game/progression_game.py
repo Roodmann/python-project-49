@@ -9,23 +9,24 @@ END_RANGE = 10
 
 def get_question_and_answer():
     """Получаем вопрос и ответ"""
-    question, correct_answer = get_progression()
-    return question, correct_answer
+    #  приняли прогрессию
+    progression = get_progression()
+    #  #  Длина индекса прогрессии
+    skip_index = random.randint(NULL, len(progression) - 1)
+    #  Далее получаем вопрос и ответ
+    answer = str(progression[skip_index])
+    progression[skip_index] = '..'
+    question = " ".join(progression).strip()
+    return question, answer
 
 
 def get_progression():
     """Получаем прогрессию"""
-    num = []
+    progression = []
     first_num = random.randint(BEGIN_RANGE, END_RANGE)
-    num.append(str(first_num))
     step = random.randint(BEGIN_RANGE, END_RANGE)
     for _ in range(END_RANGE):
         temp = first_num + step
-        num.append(str(temp))
+        progression.append(str(temp))
         first_num = temp
-    #  Длина индекса прогрессии
-    skip_index = random.randint(NULL, len(num) - 1)
-    answer = str(num[skip_index])
-    num[skip_index] = '..'
-    question = " ".join(num).strip()
-    return question, answer
+    return progression

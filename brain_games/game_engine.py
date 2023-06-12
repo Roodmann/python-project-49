@@ -39,13 +39,13 @@ def cheсk_answer(user_answer, correct_answer, name):
     return False
 
 
-def run_game(DESCRIPTION, func_2):
+def run_game(DESCRIPTION, get_question_and_answer):
     name = welcome()
     # Печатаем задание
     print(DESCRIPTION)
     for _ in range(NUMBER_OF_ROUNDS):
         # Получаем вопрос и ответ
-        question, answer = func_2()
+        question, answer = get_question_and_answer()
         # Печатаем вопрос
         print(f'Question: {question}')
         # Ответ пользователя

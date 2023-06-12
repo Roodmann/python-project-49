@@ -7,7 +7,7 @@ END_RANGE = 100
 
 
 def is_even(number):
-    """Выявляем True и Fals"""
+    """Проверяем число на четность"""
     return number % 2 == 0
 
 
