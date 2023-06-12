@@ -8,7 +8,9 @@ END_RANGE = 100
 
 def is_prime(number):
     """Проверка числа на простоту"""
-    for i in range(2, (number // number) + 1):
+    if number < 2:
+        return False
+    for i in range(2, (number // 2) + 1):
         if number % i == 0:
             return False
     return True
