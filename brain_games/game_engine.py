@@ -52,6 +52,6 @@ def run_game(DESCRIPTION, get_question_and_answer):
         u_answer = user_answer()
         # Сравниваем ответы
         result = cheсk_answer(u_answer, answer, name)
-        if result is False:
+        if not result:
             return  # Выход из игры, при не правльном ответе
     print(f'Congratulations, {name}!')

@@ -2,7 +2,7 @@ import random
 
 
 DESCRIPTION = 'What number is missing in the progression?'
-NULL = 0
+START_SKIP_INDEX = 0
 BEGIN_RANGE = 1
 END_RANGE = 10
 
@@ -11,8 +11,8 @@ def get_question_and_answer():
     """Получаем вопрос и ответ"""
     #  приняли прогрессию
     progression = get_progression()
-    #  #  Длина индекса прогрессии
-    skip_index = random.randint(NULL, len(progression) - 1)
+    #  Длина индекса прогрессии
+    skip_index = random.randint(START_SKIP_INDEX, len(progression) - 1)
     #  Далее получаем вопрос и ответ
     answer = str(progression[skip_index])
     progression[skip_index] = '..'
