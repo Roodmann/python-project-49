@@ -17,11 +17,11 @@ def get_question_and_answer():
     return question, correct_answer
 
 
-def calc_answer(first_num, OPERATORS, second_num):
+def calc_answer(first_num, operator, second_num):
     """Вычисляем значение по оператору"""
-    if OPERATORS == '+':
+    if operator == '+':
         return first_num + second_num
-    elif OPERATORS == '-':
+    elif operator == '-':
         return first_num - second_num
-    elif OPERATORS == '*':
+    elif operator == '*':
         return first_num * second_num
